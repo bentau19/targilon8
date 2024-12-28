@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const articles = require('./routes/article');
+const categories = require('./routes/categories');
 require('custom-env').env(process.env.NODE_ENV, './config');
 mongoose.connect(process.env.CONNECTION_STRING,
 { useNewUrlParser: true,

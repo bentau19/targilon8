@@ -5,7 +5,7 @@ router.route('/')
 .get(categories.getCategories)
 .post(categories.createCategories);
 router.route('/:id')
-.get(categories.getCategories)
+.get(categories.getCategorie)
 .patch(categories.updateCategories)
 .delete(categories.deleteCategories);
 module.exports = router;

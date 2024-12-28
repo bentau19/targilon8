@@ -6,7 +6,7 @@ const getCategories = async (req, res) => {
 res.json(await CategoriesService.getCategories());
 };
 const getCategorie = async (req, res) => {
-const article = await CategoriesService.getCategorieseById(req.params.id);
+const article = await CategoriesService.getCategoriesById(req.params.id);
 if (!article) {
 return res.status(404).json({ errors: ['Categories not found'] });
 }

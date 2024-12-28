@@ -10,4 +10,4 @@ type: Date,
 default: Date.now
 }
 });
-module.exports = mongoose.model('Categories', Article);
+module.exports = mongoose.model('Categories', Categories);
